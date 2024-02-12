@@ -1,6 +1,5 @@
 <h3>Servers</h3>
 
-<app-server></app-server>
-<app-server *ngFor="let server of servers"></app-server>
+<app-server *ngFor="let server of servers" [element]="server"></app-server>
 
 

@@ -1,7 +1,12 @@
 <div class="container">
     <div class="row">
         <div class="col-xs-12">
-            <app-servers></app-servers>
+        
+            <app-add-server  (serverCreated)="onServerAdded($event)" />
+        </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <app-server *ngFor="let server of serverElements" [element]="server"></app-server>
         </div>
     </div>
 </div>
